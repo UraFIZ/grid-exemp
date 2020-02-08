@@ -1,0 +1,205 @@
+.main-container {
+    max-width: 1920px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+a:hover {
+    text-decoration: none;
+}
+.heading-2-meb-green {
+    font-family: Montserrat-ExtraBold;
+    margin: 0;
+    font-size: 40px;
+    line-height: 49px;
+    letter-spacing: 1.37px;
+    color: #1ca880;
+}
+/***************************************globe-quontity section*************************/
+.globe-quontity {
+    margin: 0 auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.globe-quontity-content {
+    display: inline-block;
+    text-align: center;
+}
+
+.counter {
+    display: inline-block;
+    width: 110px;
+    text-decoration: underline;
+}
+.globe-quontity-content .content-wrapper {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+#number-community {
+    width: 70px;
+}
+/***************************************end globe-quontity section*************************/
+
+/*********************************instagram section*****************************************/
+.instagram-section {
+    display: grid;
+    height: 600px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+    'left-1 left-2 top-1 top-2 right-1 right-2'
+    'left-3 left-4 center1 center1 right-3 right-4'
+    'left-5 left-6 bottom-1 bottom-2 right-5 right-6';
+
+}
+.left-side-1 {
+    grid-area: left-1;
+}
+.left-side-2 {
+    grid-area: left-2;
+}
+.left-side-3 {
+    grid-area: left-3;
+}
+.left-side-4 {
+    grid-area: left-4;
+}
+.left-side-5 {
+    grid-area: left-5;
+}
+.left-side-6 {
+    grid-area: left-6;
+}
+.top-center-1 {
+    grid-area: top-1;
+}
+.top-center-2 {
+    grid-area: top-2;
+}
+.center {
+    grid-area: center1;
+}
+
+.bottom-center-1 {
+    grid-area: bottom-1;
+}
+.bottom-center-2 {
+    grid-area: bottom-2;
+}
+.right-side-1 {
+    grid-area: right-1;
+}
+.right-side-2 {
+    grid-area: right-2;
+}
+.right-side-3 {
+    grid-area: right-3;
+}
+.right-side-4 {
+    grid-area: right-4;
+}
+.right-side-5 {
+    grid-area: right-5;
+}
+.right-side-6 {
+    grid-area: right-6;
+}
+.instagram-section-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin: 0 auto;
+    background-image: linear-gradient(to bottom, rgba(104, 208, 227, 0.99) -37%, #37a3c3);
+}
+
+.instagram-content-wrapper {
+    max-width: 483px;
+    text-align: center;
+}
+
+.instagram-section-title {
+    margin-bottom: 23px;
+}
+
+.instagram-content-wrapper h3 {
+    margin-bottom: 30px;
+}
+
+.instagram-content-wrapper p {
+    margin-bottom: 28px;
+}
+
+.instagram-img {
+    overflow: hidden;
+    height: 100%;
+}
+.instagram-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
+    transition: all 0.5s ease-in-out;
+}
+    .instagram-img img:hover {
+        transform: scale(1.3);
+        filter: brightness(1);
+    }
+    /**************x******************end instagram section****************************x************/
+
+    @media(max-width: 992px) {
+        .instagram-section {
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-areas:
+            'left-2 top-1 top-2 right-1'
+            'left-4 center center right-3'
+            'left-6 bottom-1 bottom-2 right-5';
+        }
+        .left-side-1 {
+            grid-area: left-1;
+            display: none;
+        }
+
+        .left-side-3 {
+            display: none;
+            grid-area: left-3;
+        }
+        .left-side-5 {
+            display: none;
+            grid-area: left-5;
+        }
+  
+
+        .right-side-2 {
+            display: none;
+            grid-area: right-2;
+        }
+        .right-side-4 {
+            display: none;
+            grid-area: right-4;
+        }
+        .right-side-6 {
+            display: none;
+            grid-area: right-6;
+        }
+    }
+
+    @media(max-width: 600px) {
+        .instagram-section {
+            grid-template-columns: repeat(2, 1fr);
+            height: 500px;
+            grid-template-areas:
+            'top-1 top-2'
+            'center center'
+            'bottom-1 bottom-2';
+        }
+        div[class*="left"] {
+            display: none;
+        }
+        div[class*="right"] {
+            display: none;
+        }
+
+    }
